@@ -1,10 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import * as tf from "@tensorflow/tfjs";
-import * as mobilenet from "@tensorflow-models/mobilenet";
-import * as Knnclassifier from "@tensorflow-models/knn-classifier";
-import { useEffect, useRef, useState } from "react";
 
+import { useEffect, useRef, useState } from "react";
 import {
   AreaChart,
   Area,
@@ -17,6 +14,9 @@ import {
   Legend,
   Bar,
 } from "recharts";
+import * as tf from "@tensorflow/tfjs";
+import * as mobilenet from "@tensorflow-models/mobilenet";
+import * as Knnclassifier from "@tensorflow-models/knn-classifier";
 const WEAR_MASK_LABLE = "WEAR_MASK_LABLE";
 const NOT_WEAR_MASK_LABLE = "NOT_WEAR_MASK_LABLE";
 const WEARING_NOT_CORRECT = "WEARING_NOT_CORRECT";
