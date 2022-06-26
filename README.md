@@ -4,7 +4,7 @@
     -   Thư viện : Tensorflow ( KNN classifier , Mobilenet)
 
 # Một số hình ảnh demo nhận diện nhiều sản phẩm với nhau 
-    ![image](https://user-images.githubusercontent.com/86192249/175804139-40609846-96a7-4ca0-bc18-96039cfb2c32.png)
+    
 
 
 

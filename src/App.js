@@ -4,8 +4,7 @@ import * as tf from "@tensorflow/tfjs";
 import * as mobilenet from "@tensorflow-models/mobilenet";
 import * as Knnclassifier from "@tensorflow-models/knn-classifier";
 import { useEffect, useRef, useState } from "react";
-const WEAR_MASK_LABLE = "WEAR_MASK_LABLE";
-const NOT_WEAR_MASK_LABLE = "NOT_WEAR_MASK_LABLE";
+
 import {
   AreaChart,
   Area,
@@ -18,6 +17,8 @@ import {
   Legend,
   Bar,
 } from "recharts";
+const WEAR_MASK_LABLE = "WEAR_MASK_LABLE";
+const NOT_WEAR_MASK_LABLE = "NOT_WEAR_MASK_LABLE";
 const WEARING_NOT_CORRECT = "WEARING_NOT_CORRECT";
 const TIME_TRAIN_PER_SEC = 100;
 function App() {
@@ -121,7 +122,7 @@ function App() {
         <video ref={Video} className="video" autoPlay />
         <div className="control">
           <label>
-            {labelArr.length> 0 && Index< labelArr.length
+            {labelArr.length > 0 && Index < labelArr.length
               ? " Trainning for " + labelArr[Index]?.text
               : ""}
           </label>
@@ -136,7 +137,10 @@ function App() {
                 } else alert("Không có gì để tranning .. Vui lòng add Sample");
               }}
             >
-              Tranning {labelArr.length> 0 && Index< labelArr.length  ? labelArr[Index].text : ""}
+              Tranning{" "}
+              {labelArr.length > 0 && Index < labelArr.length
+                ? labelArr[Index].text
+                : ""}
             </button>
           ) : (
             ""
