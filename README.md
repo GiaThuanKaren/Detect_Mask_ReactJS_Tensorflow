@@ -1,3 +1,9 @@
+
+# Các Công nghệ được sử dụng trong project :
+    -   UI ( FrontEnd ) : ReactJS , ReactChart
+    -   Thư viện : Tensorflow ( KNN classifier , Mobilenet)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
